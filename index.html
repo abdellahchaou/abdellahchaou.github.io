@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Abdellah Chaou</title>
-  <meta property="og:type" content="website">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Abdellah Chaou | Cybersecurity Student">
 <meta property="og:description" content="Cybersecurity Student in Rabat, Morocco. Networking and defensive security. Seeking a cybersecurity internship.">
 <meta property="og:url" content="https://abdellahchaou.github.io/">
@@ -149,6 +149,21 @@ h2{font-size:clamp(28px,3.6vw,38px);font-weight:600;line-height:1.15}
 .t-org{color:var(--accent);font-size:15px}
 .t-item p{color:var(--muted);margin:10px 0 0;max-width:62ch;font-size:15px}
 
+/* Certifications */
+.certs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cert{display:flex;flex-direction:column}
+.cert-issuer{display:flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.cert h3{font-size:17.5px;font-weight:600;margin:14px 0 6px;line-height:1.35}
+.cert .kind{color:var(--muted);font-size:14px}
+.cert-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding-top:18px;border-top:1px solid var(--line);font-size:14px}
+.cert-body{padding-bottom:18px}
+.cert-foot a{color:var(--fg);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.cert-foot a:hover{color:var(--accent)}
+.cert-foot small{color:var(--muted-2);font-family:var(--f-mono);font-size:12px}
+.verified{display:inline-flex;align-items:center;gap:5px;color:#22C55E;font-size:12.5px}
+@media(max-width:960px){.certs{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.certs{grid-template-columns:1fr}}
+
 /* Contact */
 .contact-box{border:1px solid var(--line);border-radius:14px;background:var(--bg-2);display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
 .contact-pitch{padding:40px;border-right:1px solid var(--line);min-width:0}
@@ -187,6 +202,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-right">
@@ -375,6 +391,42 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
         <span class="t-org">CMC OFPPT · Morocco</span>
       </div>
       
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Certifications</p>
+      <h2>Certifications and badges</h2>
+      <p class="lead">Each credential can be verified on Credly.</p>
+    </div>
+    <div class="certs">
+      <article class="card cert">
+        <div class="cert-body">
+          <span class="cert-issuer">Fortinet</span>
+          <h3>NSE 1 Certified in Cybersecurity</h3>
+          <span class="kind">Certification</span>
+        </div>
+        <div class="cert-foot"><a href="https://www.credly.com/badges/026b3a68-1776-4249-9e3b-715cb64c0676/public_url" target="_blank" rel="noopener">Verify on Credly →</a></div>
+      </article>
+      <article class="card cert">
+        <div class="cert-body">
+          <span class="cert-issuer">Fortinet</span>
+          <h3>Cybersecurity and Cloud Fundamentals v1.0</h3>
+          <span class="kind">NSE 1 Exam</span>
+        </div>
+        <div class="cert-foot"><a href="https://www.credly.com/badges/61c4f41c-dfc2-4049-943e-31704ba6a1e0/public_url" target="_blank" rel="noopener">Verify on Credly →</a></div>
+      </article>
+      <article class="card cert">
+        <div class="cert-body">
+          <span class="cert-issuer">Cisco Networking Academy</span>
+          <h3>Introduction to Cybersecurity</h3>
+          <span class="kind">Course completion</span>
+        </div>
+        <div class="cert-foot"><a href="https://www.credly.com/badges/c8207f04-bb67-45c3-ba94-178e61011867" target="_blank" rel="noopener">Verify on Credly →</a><small>Nov 2026</small></div>
+      </article>
     </div>
   </div>
 </section>
